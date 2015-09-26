@@ -1,0 +1,11 @@
+import urllib2
+url = "http://learnpythonthehardway.org/book/ex"
+x = 10
+while x<=52:
+    
+page = urllib2.urlopen('http://stackoverflow.com')
+
+page_content = page.read()
+
+with open('page_content.html', 'w') as fid:
+    fid.write(page_content)
